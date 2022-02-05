@@ -1,0 +1,2 @@
+- name: JSONResume Export
+  uses: kelvintaywl/action-jsonresume-export@v1
