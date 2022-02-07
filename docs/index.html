@@ -1,1 +1,777 @@
-test index
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Geoffrey Maddock</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+html {
+  background: white;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #39424B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2895F1;
+}
+
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #56817A;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
+.profile-pic img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #56817A;
+}
+
+.summary {
+  margin: 5px 0 5px;
+}
+
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: dimgray;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #56817A;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+
+  .container {
+    page-break-inside: avoid;
+  }
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+
+.info-tag-container .info-text {
+  font-size: 12px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-skill {
+  font-size: 80%;
+}
+
+.skill {
+  margin: .15em;
+  padding: .15em;
+  background: ghostwhite;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+        <div class="profile-header pull-left">
+            <h1>Geoffrey Maddock</h1>
+            <h2>Programmer, Web Developer, Promoter, DJ</h2>
+        </div>
+        <div class="profile-pic pull-right">
+            <img src="http://geoffreymaddock.com/images/geoff-circle.png" alt="profile-pic">
+        </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+            <div class="title">
+                <h3>About</h3>
+                <div class="keyline"></div>
+            </div>
+                <div class="info-tag-container">
+                    <i class="fa fa-map-marker"></i>
+                
+                        <h6 class="info-text">50 Pasadena Street Pittsburgh Pennsylvania PA 15211 US</h6>
+                </div>
+        
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-envelope-o"></i>
+                
+                        <h6 class="info-text">
+                            <a href="mailto:geoff.maddock@gmail.com" target="_blank">
+                                geoff.maddock@gmail.com
+                            </a>
+                        </h6>
+                </div>
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-mobile"></i>
+                
+                        <h6 class="info-text">412.320.1476</h6>
+                </div>
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-globe"></i>
+                
+                        <h6 class="info-text">
+                            <a href="https://geoffreymaddock.com" target="_blank">
+                                geoffreymaddock.com
+                            </a>
+                        </h6>
+                </div>
+        
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-twitter"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://twitter.com/cutups" target="_blank">
+                                                 cutups
+                                             </a>
+                                         </h6>
+                                 </div>
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-soundcloud"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://soundcloud.com/cutups" target="_blank">
+                                                 cutups
+                                             </a>
+                                         </h6>
+                                 </div>
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-facebook"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://www.facebook.com/geoff.maddock" target="_blank">
+                                                 geoff.maddock
+                                             </a>
+                                         </h6>
+                                 </div>
+                                <div class="info-tag-container">
+                                    <i class="fa fa-linkedin-square"></i>
+                                
+                                        <h6 class="info-text">
+                                            <a href="https://www.linkedin.com/in/gmaddock" target="_blank">
+                                                gmaddock
+                                            </a>
+                                        </h6>
+                                </div>
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-github"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://github.com/geoff-maddock" target="_blank">
+                                                 geoff-maddock
+                                             </a>
+                                         </h6>
+                                 </div>
+        </section>
+            <div class="skills-container">
+                    <section class="container">
+                            <div class="title">
+                                <h3>Web Development</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Master</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">PHP</h6>
+                                    <h6 class="main-skill skill">Javascript</h6>
+                                    <h6 class="main-skill skill">GIT</h6>
+                                    <h6 class="main-skill skill">HTML</h6>
+                                    <h6 class="main-skill skill">CSS</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Database Management Systems</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Master</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">MySQL</h6>
+                                    <h6 class="main-skill skill">Oracle</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Frameworks</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Master</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Symfony</h6>
+                                    <h6 class="main-skill skill">Laravel</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Event Promotion</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Master</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Curation</h6>
+                                    <h6 class="main-skill skill">Social Media</h6>
+                                    <h6 class="main-skill skill">Flyer Design</h6>
+                                    <h6 class="main-skill skill">Logistics</h6>
+                                    <h6 class="main-skill skill">Audio Engineering</h6>
+                                    <h6 class="main-skill skill">DJ Sets</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Operating Systems</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Experienced</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Unix</h6>
+                                    <h6 class="main-skill skill">Windows</h6>
+                                    <h6 class="main-skill skill">MacOs</h6>
+                            </div>
+                    </section>
+            </div>
+            <div class="container languages-container">
+                <div class="title">
+                    <h3>Languages</h3>
+                    <div class="keyline"></div>
+                </div>
+                <ul class="minimal">
+                        <li>
+                            <h6>English <em>(Native speaker)</em></h6>
+                        </li>
+                </ul>
+            </div>
+            <div class="container interests-container">
+                <div class="title">
+                    <h3>Interests</h3>
+                    <div class="keyline"></div>
+                </div>
+                    <section class="item">
+                            <h4 class="bold">Music</h4>
+                            <ul class="minimal">
+                                    <li>Electronic</li>
+                                    <li>Experimental</li>
+                            </ul>
+                    </section>
+                    <section class="item">
+                            <h4 class="bold">Arts</h4>
+                            <ul class="minimal">
+                                    <li>Film</li>
+                                    <li>Street Art</li>
+                                    <li>Multimedia</li>
+                                    <li>Print</li>
+                            </ul>
+                    </section>
+            </div>
+      </aside>
+      <div class="right-column">
+                <div class="container summary-container">
+                    <div class="title">
+                        <h3>Summary</h3>
+                        <div class="keyline"></div>
+                    </div>            <p class="summary">
+                        Geoffrey hails from Pittsburgh, PA. He earned a degree in Computer Science from the University of Pittsburgh.  His professional career has been entirely under the roof at Expedient, a mid-sided datacenter hosting and managed services company.   After getting his feet wet in Technical Support and Network Operations,  he became a full time Programmer, focusing on improving the company infrastructure and building robust web applications for all aspects of the operation.   His work has always been ad-hoc coding and finding the best tool for the job, but his specialty has become designing and building custom, effective applications in the Symfony framework with PHP, Javascript and MySQL and Oracle backends.   In parallel, for many years he ran an online record distro, which paired with regular event promotion and both live and dj-based club nights.   He enjoys sci-fi, art, music, gaming and the outdoors.
+                    </p>
+                </div>
+        <div class="container work-container">
+            <div class="title">
+                <h3>Experience</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://expedient.com" target="_blank">
+                                    Expedient
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">01/2005</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Programmer</h4>
+        
+        
+                    <p class="summary">Expedient is a leading provider of data center and managed data network services with data centers in Pittsburgh, Baltimore, Columbus, Boston, Cleveland, Memphis and Indianapolis</p>
+        
+                    <ul>
+                        <li>I design and develop web application software for a network, datacenter and managed-services company with a national profile.</li>
+                        <li>I work with stakeholders of all skill levels to create clear, custom code solutions using PHP, Symfony, Javascript, MySQL, Oracle DB and any other applicable tools in our stack.</li>
+                        <li>I have been the lead developer on a number of mission critical applications used by our Operations, Sales, Delivery and Support Teams, including Support Management Concole, QuoteTracker, PurchaseTracker, Delivery Tracker, Project Workbooks, IP Management Tool and others.</li>
+                        <li>Won both solo (for Sales Commissions Tracker) and team based (for Workbooks) awards (Expys) in recognition for exceptional projects that helped support our organization.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://starget.net" target="_blank">
+                                    Stargate
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">11/1999</span>
+                                <span class="endDate"> - 01/2005</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Network Operations and Technical Support Analyst</h4>
+        
+        
+                    <p class="summary">Stargate was a Pittsburgh based ISP and datacenter that was later bought by Expedient.   This was my first job out of college, working first in Tech Support, then Network Operations, supporting escalated corporate and residential network and software problems.</p>
+        
+                    <ul>
+                        <li>Training of new call-center employees in troubleshooting and company procedures</li>
+                        <li>Performed shift-leader duties, including assisting other techs, answering email problems, and handling escalated cases</li>
+                        <li>Handled escalated support requests for a major regional ISP and Datacenter</li>
+                        <li>Designed a version of the company intranet website.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://wrecked-distro.com" target="_blank">
+                                    Wrecked Distribution
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">01/2001</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Owner</h4>
+        
+        
+                    <p class="summary">Distributor and importer of hard to find electronic and experimental music with a strong catalog of breakcore and IDM.   Mostly operates as an online retailer and reseller as well as vendor at events.</p>
+        
+                    <ul>
+                        <li>Owner and sole-proprietor of WRECKED part-time mail-order business </li>
+                        <li>Designed, coded, and maintain website, including a user system, shopping cart, and inventory control. Written from the ground up using PHP and MySQL. Designed and implemented the database using MySQL.  </li>
+                        <li>Involved in all aspects of acquiring and distribution of experimental electronic music, from receiving purchases, to packing orders, coding, business and design issues.</li>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://events.cutupsmethod.com" target="_blank">
+                                    DIY Events
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">01/2008</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Promoter</h4>
+        
+        
+                    <p class="summary">Curate, organize, and promote events and concerts in the Pittsburgh area, both live acts, DJ nights and multimedia special events.</p>
+        
+                    <ul>
+                        <li>PBS Promotions from 1998-2001, promoting a unique blend of electronic, experimental and other boundary pushing events in different venues including Millvale Industrial Theater, The Irish Center of Pittsburgh, and the Southside Ice Arena.</li>
+                        <li>Wrecked Distro productions from 2001 through today, focusing on boundary pushing hard electronic and experimental music.   Worked with international artists at a large array of independent venues.</li>
+                        <li>Resident of FUZZ from 2001 until 2014, a weekly Drum and Bass music night at the Bloomfield Bridge Tavern.   Booked hundreds of local, national and international artists, handled transportation, sound load in, web and graphic design work along with an evolving group of contributors.</li>
+                        <li>Creator and resident of LAZERCRUNK from 2008 until present.   Along with Todd Keebler, curate a monthly night of fun, forward thinking dance music.   We book the guests, design promotion, handle web content, set up sound, build installation art and perform each month.</li>
+                        <li>Creator and resident of ILLUSIONS, a semi regular night for new and classic dark dance music.  This is a multi-media event conceived with partners to present both live acts, djs and video performance that fall within a broad spectrum of dark or occult themed music.</li>
+                    </ul>
+                </section>
+        </div>
+        <div class="container education-container">
+            <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+        </div> 
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    University of Pittsburgh
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">08/1995</span>
+                    <span class="endDate"> - 05/1999</span>
+            </h5>
+        </div>
+         
+                <h4>Bachelor Computer Science</h4>
+        
+                <h5>3.2</h5>
+                  
+                <ul class="two-column">
+                    <li>0441 DISCRETE STRUCTURES FOR COMPUTER SCIENCE</li>
+                    <li>0445 DATA STRUCTURES</li>
+                    <li>1520 PROGRAMMING LANGUAGES</li>
+                    <li>1652 DATA COMMUNICATION &amp; COMPUTER NETWORKS</li>
+                    <li>1571 INTRODUCTION TO ARTIFICIAL INTELLIGENCE</li>
+                </ul>
+            </section>
+        </div>
+        <div class="container awards-container">
+            <div class="title">
+                <h3>Awards</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                EXPY
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+        
+                    <h5 class="awarder">Expedeint</h5>
+        
+                    <p class="summary">For Extaordinary Service Provider Special Projects for the Customer Workbooks Project - creating and building a dynamic interface for collecting detailed information from customers to help us complete delivery of their new services.</p>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                EXPY
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+        
+                    <h5 class="awarder">Expedient</h5>
+        
+                    <p class="summary">For the implementation of a Sales Commissions tool that turned a complex spreadsheet that relied on human input into backend web business logic that automatically derives commissions from data in our sales and delivery system.</p>
+                </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
