@@ -1,0 +1,320 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>@charset "UTF-8";
+/* Workaround for 'break-before:avoid' */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; }
+
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+span {
+  display: block; }
+
+p {
+  margin: 0; }
+
+@page {
+  size: A4;
+  margin: 15mm 0 20mm 0; }
+
+@page :first {
+  margin-top: 10mm; }
+
+a {
+  color: #222222;
+  font-weight: inherit;
+  text-decoration: none; }
+  a[href] {
+    text-decoration: underline;
+    text-decoration-color: #555555; }
+
+p {
+  line-height: 1.2; }
+
+li {
+  line-height: 1.3; }
+  li:first-child {
+    margin-top: 0; }
+
+.content {
+  width: 1000px;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222222; }
+
+.table {
+  width: 100%;
+  display: table;
+  padding: 20px 0; }
+  .table .main {
+    display: table-cell;
+    width: 70%;
+    padding-right: 50px; }
+    .table .main .highlights {
+      width: auto;
+      display: block;
+      padding: 0 10px;
+      margin-top: 12.30769px;
+      margin-bottom: 0;
+      columns: 2;
+      column-width: 310px;
+      column-gap: 10px; }
+      .table .main .highlights li {
+        font-size: 14px;
+        list-style: none;
+        line-height: 1.2; }
+        .table .main .highlights li:before {
+          content: "· ";
+          vertical-align: middle; }
+  .table .side {
+    display: table-cell;
+    width: 30%;
+    padding-left: 50px;
+    text-align: right; }
+    .table .side p {
+      line-height: 1.3; }
+
+.section-title {
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0 0 20px 0; }
+
+.margin-container-2:not(:first-child) {
+  margin-top: 20px; }
+
+.margin-container-3:not(:first-child) {
+  margin-top: 30px; }
+
+.margin-container-4:not(:first-child) {
+  margin-top: 50px; }
+
+.margin-text-1 {
+  margin-top: 0.25em; }
+  .margin-text-1:empty {
+    display: none; }
+
+.margin-text-2 {
+  margin-top: 0.5em; }
+  .margin-text-2:empty {
+    display: none; }
+
+.margin-text-3 {
+  margin-top: 1em; }
+  .margin-text-3:empty {
+    display: none; }
+
+.no-break {
+  break-inside: avoid; }
+
+.no-alone-1 {
+  break-inside: avoid; }
+  .no-alone-1::after {
+    content: "";
+    display: block;
+    height: 75px;
+    margin-bottom: -75px; }
+
+.no-alone-2 {
+  break-inside: avoid; }
+  .no-alone-2::after {
+    content: "";
+    display: block;
+    height: 150px;
+    margin-bottom: -150px; }
+
+.markdown h1 {
+  font-size: 160%;
+  font-weight: bolder; }
+
+.markdown h2 {
+  font-size: 150%;
+  font-weight: bolder; }
+
+.markdown h3 {
+  font-size: 140%;
+  font-weight: bolder; }
+
+.markdown h4 {
+  font-size: 130%;
+  font-weight: bold; }
+
+.markdown h5 {
+  font-size: 120%;
+  font-weight: bold; }
+
+.markdown h6 {
+  font-size: 110%;
+  font-weight: bold; }
+
+.markdown ul, .markdown ol {
+  margin-left: 20px; }
+
+.markdown img {
+  display: block;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center; }
+
+.markdown blockquote {
+  margin: 20px 0;
+  padding: 15px 20px; }
+  .markdown blockquote p {
+    display: inline; }
+
+.markdown code {
+  font-family: monospace; }
+
+.basics .main {
+  vertical-align: middle; }
+  .basics .main .name {
+    font-size: 80px;
+    line-height: 1em;
+    font-weight: bold;
+    display: block;
+    margin-left: -5.6px; }
+  .basics .main .label {
+    font-size: 40px;
+    line-height: 1em;
+    font-weight: lighter;
+    display: block;
+    margin-left: -1.6px; }
+
+.basics .side {
+  vertical-align: middle;
+  padding-left: 0;
+  padding-top: 15px; }
+  .basics .side .contact {
+    font-size: 18px;
+    list-style-type: none; }
+    .basics .side .contact li {
+      line-height: 1.5em; }
+
+.basics .summary {
+  font-size: 16px;
+  padding: 20px 0; }
+
+.work .header .table {
+  padding: 0; }
+  .work .header .table .left {
+    display: table-cell; }
+    .work .header .table .left .position {
+      font-size: 18px;
+      font-weight: bold;
+      display: block; }
+    .work .header .table .left .company-location {
+      font-size: 15px;
+      font-weight: lighter;
+      display: block; }
+      .work .header .table .left .company-location a {
+        text-decoration-color: #888888; }
+  .work .header .table .right {
+    text-align: right;
+    display: table-cell; }
+    .work .header .table .right .dates {
+      font-size: 15px;
+      font-weight: lighter; }
+
+.work .summary {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 12.30769px; }
+  .work .summary:empty {
+    display: none; }
+
+.projects .header .name {
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block; }
+  .projects .header .name a {
+    text-decoration-color: #222222; }
+
+.projects .header .roles {
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block; }
+
+.projects .description {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 12.30769px; }
+  .projects .description:empty {
+    display: none; }
+
+.skills .section-title {
+  margin: 0; }
+
+.skills .container {
+  display: block;
+  columns: 2;
+  column-gap: 10px; }
+  .skills .container .article {
+    break-inside: avoid-column;
+    width: 120px;
+    padding-top: 20px; }
+    .skills .container .article span {
+      display: block;
+      font-size: 18px;
+      font-weight: lighter; }
+    .skills .container .article li {
+      font-size: 14px;
+      list-style: none;
+      line-height: 1.3; }
+
+.education .title {
+  font-size: 15px; }
+
+.education .institution {
+  font-size: 15px;
+  font-weight: lighter; }
+  .education .institution a {
+    text-decoration-color: #888888; }
+
+.certificates .name {
+  font-size: 15px; }
+
+.certificates .issuer {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-top: 0.35em; }
+
+.awards .header .title {
+  font-size: 16px;
+  display: inline-block; }
+
+.awards .header .awarder {
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 16px;
+  display: inline-block; }
+
+.awards .summary {
+  font-size: 14px; }
+
+.languages ul {
+  list-style: none; }
+  .languages ul li {
+    font-size: 14px; }
+
+.interests ul {
+  list-style: none; }
+  .interests ul li {
+    font-size: 14px; }
+
+.links ul {
+  list-style: none; }
+  .links ul li {
+    font-size: 14px; }
+</style><title>Actual theme for JSON Resume</title></head><body><div class="content"><div class="basics"><div class="table"><div class="main"><span class="name">Geoffrey Maddock</span><span class="label">Programmer, Web Developer, Promoter, DJ</span></div><div class="side"><ul class="contact"><li>412.320.1476</li><li>geoff.maddock@gmail.com</li><li class="margin-text-3">Pittsburgh, Pennsylvania, US</li></ul></div></div><div class="summary markdown"><p>Geoffrey hails from Pittsburgh, PA. He earned a degree in Computer Science from the University of Pittsburgh.  His professional career has been entirely under the roof at Expedient, a mid-sided datacenter hosting and managed services company.   After getting his feet wet in Technical Support and Network Operations,  he became a full time Programmer, focusing on improving the company infrastructure and building robust web applications for all aspects of the operation.   His work has always been ad-hoc coding and finding the best tool for the job, but his specialty has become designing and building custom, effective applications in the Symfony framework with PHP, Javascript and MySQL and Oracle backends.   In parallel, for many years he ran an online record distro, which paired with regular event promotion and both live and dj-based club nights.   He enjoys sci-fi, art, music, gaming and the outdoors.</p>
+</div></div><div class="table"><div class="main"><div class="work margin-container-4"><p class="section-title no-alone-2">Experience</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position">Programmer</span><span class="company-location margin-text-1"><a></a></span></div><div class="right"><span class="dates">Jan 2005 - Present</span></div></div></div><div class="summary markdown"><p>Expedient is a leading provider of data center and managed data network services with data centers in Pittsburgh, Baltimore, Columbus, Boston, Cleveland, Memphis and Indianapolis</p>
+</div><ul class="highlights no-break"><li>I design and develop web application software for a network, datacenter and managed-services company with a national profile.</li><li>I work with stakeholders of all skill levels to create clear, custom code solutions using PHP, Symfony, Javascript, MySQL, Oracle DB and any other applicable tools in our stack.</li><li>I have been the lead developer on a number of mission critical applications used by our Operations, Sales, Delivery and Support Teams, including Support Management Concole, QuoteTracker, PurchaseTracker, Delivery Tracker, Project Workbooks, IP Management Tool and others.</li><li>Won both solo (for Sales Commissions Tracker) and team based (for Workbooks) awards (Expys) in recognition for exceptional projects that helped support our organization.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position">Network Operations and Technical Support Analyst</span><span class="company-location margin-text-1"><a></a></span></div><div class="right"><span class="dates">Nov 1999 - Jan 2005</span></div></div></div><div class="summary markdown"><p>Stargate was a Pittsburgh based ISP and datacenter that was later bought by Expedient.   This was my first job out of college, working first in Tech Support, then Network Operations, supporting escalated corporate and residential network and software problems.</p>
+</div><ul class="highlights no-break"><li>Training of new call-center employees in troubleshooting and company procedures</li><li>Performed shift-leader duties, including assisting other techs, answering email problems, and handling escalated cases</li><li>Handled escalated support requests for a major regional ISP and Datacenter</li><li>Designed a version of the company intranet website.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position">Owner</span><span class="company-location margin-text-1"><a></a></span></div><div class="right"><span class="dates">Jan 2001 - Present</span></div></div></div><div class="summary markdown"><p>Distributor and importer of hard to find electronic and experimental music with a strong catalog of breakcore and IDM.   Mostly operates as an online retailer and reseller as well as vendor at events.</p>
+</div><ul class="highlights no-break"><li>Owner and sole-proprietor of WRECKED part-time mail-order business </li><li>Designed, coded, and maintain website, including a user system, shopping cart, and inventory control. Written from the ground up using PHP and MySQL. Designed and implemented the database using MySQL.  </li><li>Involved in all aspects of acquiring and distribution of experimental electronic music, from receiving purchases, to packing orders, coding, business and design issues.</li><li></li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position">Promoter</span><span class="company-location margin-text-1"><a></a></span></div><div class="right"><span class="dates">Jan 2008 - Present</span></div></div></div><div class="summary markdown"><p>Curate, organize, and promote events and concerts in the Pittsburgh area, both live acts, DJ nights and multimedia special events.</p>
+</div><ul class="highlights no-break"><li>PBS Promotions from 1998-2001, promoting a unique blend of electronic, experimental and other boundary pushing events in different venues including Millvale Industrial Theater, The Irish Center of Pittsburgh, and the Southside Ice Arena.</li><li>Wrecked Distro productions from 2001 through today, focusing on boundary pushing hard electronic and experimental music.   Worked with international artists at a large array of independent venues.</li><li>Resident of FUZZ from 2001 until 2014, a weekly Drum and Bass music night at the Bloomfield Bridge Tavern.   Booked hundreds of local, national and international artists, handled transportation, sound load in, web and graphic design work along with an evolving group of contributors.</li><li>Creator and resident of LAZERCRUNK from 2008 until present.   Along with Todd Keebler, curate a monthly night of fun, forward thinking dance music.   We book the guests, design promotion, handle web content, set up sound, build installation art and perform each month.</li><li>Creator and resident of ILLUSIONS, a semi regular night for new and classic dark dance music.  This is a multi-media event conceived with partners to present both live acts, djs and video performance that fall within a broad spectrum of dark or occult themed music.</li></ul></div></div></div></div><div class="side"><div class="skills margin-container-4"><p class="section-title no-alone-1">Skills</p><div class="container"><div class="article no-break"><span>Web Development</span><ul class="margin-text-1"><li>PHP</li><li>Javascript</li><li>GIT</li><li>HTML</li><li>CSS</li></ul></div><div class="article no-break"><span>Database Management Systems</span><ul class="margin-text-1"><li>MySQL</li><li>Oracle</li></ul></div><div class="article no-break"><span>Frameworks</span><ul class="margin-text-1"><li>Symfony</li><li>Laravel</li></ul></div><div class="article no-break"><span>Event Promotion</span><ul class="margin-text-1"><li>Curation</li><li>Social Media</li><li>Flyer Design</li><li>Logistics</li><li>Audio Engineering</li><li>DJ Sets</li></ul></div><div class="article no-break"><span>Operating Systems</span><ul class="margin-text-1"><li>Unix</li><li>Windows</li><li>MacOs</li></ul></div></div></div><div class="education margin-container-4"><p class="section-title no-alone-1">Education</p><div class="container"><div class="article margin-container-2 no-break"><div class="title markdown"><p>Bachelor, Computer Science</p>
+</div><span class="institution margin-text-1"><a>University of Pittsburgh</a></span></div></div></div><div class="awards margin-container-4"><p class="section-title no-alone-1">Awards</p><div class="container"><div class="article margin-container-2 no-break"><div class="header"><span class="awarder">Expedeint</span> · <span class="title">EXPY</span></div><div class="summary markdown margin-text-1"><p>For Extaordinary Service Provider Special Projects for the Customer Workbooks Project - creating and building a dynamic interface for collecting detailed information from customers to help us complete delivery of their new services.</p>
+</div></div><div class="article margin-container-2 no-break"><div class="header"><span class="awarder">Expedient</span> · <span class="title">EXPY</span></div><div class="summary markdown margin-text-1"><p>For the implementation of a Sales Commissions tool that turned a complex spreadsheet that relied on human input into backend web business logic that automatically derives commissions from data in our sales and delivery system.</p>
+</div></div></div></div><div class="languages margin-container-4 no-break"><p class="section-title no-alone-1">Languages</p><div class="container"><ul><li class="article margin-text-1">English · Native speaker</li></ul></div></div><div class="interests margin-container-4 no-break"><p class="section-title no-alone-1">Interests</p><div class="container"><ul><li class="article margin-text-1">Music</li><li class="article margin-text-1">Arts</li></ul></div></div><div class="links margin-container-4 no-break"><p class="section-title no-alone-1">Links</p><div class="container"><ul><li class="article margin-text-2"><a href="https://twitter.com/cutups"><strong>twitter.com</strong>/cutups</a></li><li class="article margin-text-2"><a href="https://soundcloud.com/cutups"><strong>soundcloud.com</strong>/cutups</a></li><li class="article margin-text-2"><a href="https://www.facebook.com/geoff.maddock"><strong>facebook.com</strong>/geoff.maddock</a></li><li class="article margin-text-2"><a href="https://www.linkedin.com/in/gmaddock"><strong>linkedin.com</strong>/in/gmaddock</a></li><li class="article margin-text-2"><a href="https://github.com/geoff-maddock"><strong>github.com</strong>/geoff-maddock</a></li></ul></div></div></div></div></div></body></html>
