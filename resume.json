@@ -1,221 +1,211 @@
 {
-  "basics": {
-    "name": "Geoffrey Maddock",
-    "label": "Full Stack Application Developer",
-    "picture": "http://geoffreymaddock.com/images/geoff-circle.png",
-    "email": "geoff.maddock@gmail.com",
-    "phone": "412.320.1476",
-    "website": "https://geoffreymaddock.com",
-    "summary": "Geoffrey hails from Pittsburgh, PA, where he grew up and later earned a degree in Computer Science from the University of Pittsburgh.  His professional career has been primarily as part of the information systems team at Expedient, a company that has transformed itself from an ISP to a sizable datacenter hosting and cloud managed services company.  As the longest tenured member of the team, he has built and maintained applications that are critical to the business's success, as well as worked to improve our software quality standards with continuous improvement, focusing on improving the company infrastructure and building robust web applications for all aspects of the operation, from sales to operations. His specialty has become designing and building custom, effective applications in the Symfony framework with PHP, Javascript, Go and MySQL, and deploying them to Kubernetes.  This is done while employing SCRUM to continuously inspect and improve our working process and produce the work most useful to the company in regular increments.  He enjoys music and djing, sci-fi, art, gaming and the outdoors.",
-    "location": {
-      "address": "50 Pasadena Street",
-      "postalCode": "PA 15211",
-      "city": "Pittsburgh",
-      "countryCode": "US",
-      "region": "Pennsylvania"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "cutups",
-        "url": "https://twitter.com/cutups"
-      },
-      {
-        "network": "SoundCloud",
-        "username": "cutups",
-        "url": "https://soundcloud.com/cutups"
-      },
-      {
-        "network": "Facebook",
-        "username": "geoff.maddock",
-        "url": "https://www.facebook.com/geoff.maddock"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "gmaddock",
-        "url": "https://www.linkedin.com/in/gmaddock"
-      },
-      {
-        "network": "GitHub",
-        "username": "geoff-maddock",
-        "url": "https://github.com/geoff-maddock"
-      }
-    ]
-  },
-  "work": [
-    {
-      "company": "Expedient",
-      "position": "Application Developer",
-      "website": "https://expedient.com",
-      "startDate": "2005-01-01",
-      "summary": "Expedient is a leading provider of data center and managed data network services with data centers in Pittsburgh, Baltimore, Columbus, Boston, Cleveland, Memphis and Indianapolis",
-      "highlights": [
-        "I design, develop and maintain scalable web applications for the employees of a Datacenter and cloud managed-services company with a rising national profile.",
-        "I work as part of a SCRUM team to convert the user stories from stakeholders into clear technical specifications, and then create custom code solutions using PHP, Javascript, Go, and MySQL, and deploy those Kubernetes.  I also manage tooling to support our infrastructure as code.",
-        "I have been the lead developer on a number of mission critical applications used by our Operations, Sales, Delivery and Support Teams, including Support Management Concole, QuoteTracker, PurchaseTracker, Delivery Tracker, Project Workbooks, IP Management Tool and others.",
-        "Won both solo (for Sales Commissions Tracker) and team based (for Workbooks) awards (Expys) in recognition for exceptional projects that helped support our organization."
-      ]
-    },
-    {
-      "company": "Stargate",
-      "position": "Network Operations and Technical Support Analyst",
-      "website": "http://stargate.net",
-      "startDate": "1999-11-01",
-      "endDate": "2005-01-01",
-      "summary": "Stargate was a Pittsburgh based ISP and datacenter that was later bought by Expedient.   This was my first job out of college, working first in Tech Support, then Network Operations, supporting escalated corporate and residential network and software problems.",
-      "highlights": [
-        "Training of new call-center employees in troubleshooting and company procedures",
-        "Performed shift-leader duties, including assisting other techs, answering email problems, and handling escalated cases",
-        "Handled escalated support requests for a major regional ISP and Datacenter",
-        "Designed a version of the company intranet website."
-      ]
-    },
-    {
-      "company": "Wrecked Distribution",
-      "position": "Owner",
-      "website": "http://wrecked-distro.com",
-      "startDate": "2001-01-01",
-      "summary": "Distributor and importer of hard to find electronic and experimental music with a strong catalog of breakcore and IDM.   Mostly operates as an online retailer and reseller as well as vendor at events.",
-      "highlights": [
-        "Owner and sole-proprietor of WRECKED part-time mail-order business ",
-        "Designed, coded, and maintain website, including a user system, shopping cart, and inventory control. Written from the ground up using PHP and MySQL. Designed and implemented the database using MySQL.  ",
-        "Involved in all aspects of acquiring and distribution of experimental electronic music, from receiving purchases, to packing orders, coding, business and design issues.",
-        ""
-      ]
-    }
-  ],
-  "volunteer": [],
-  "education": [
-    {
-      "institution": "University of Pittsburgh",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "1995-08-01",
-      "endDate": "1999-05-01",
-      "gpa": "3.2",
-      "courses": [
-        "0441 DISCRETE STRUCTURES FOR COMPUTER SCIENCE",
-        "0445 DATA STRUCTURES",
-        "1520 PROGRAMMING LANGUAGES",
-        "1652 DATA COMMUNICATION & COMPUTER NETWORKS",
-        "1571 INTRODUCTION TO ARTIFICIAL INTELLIGENCE"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "EXPY",
-      "date": "2021",
-      "awarder": "Expedeint",
-      "summary": "For Extaordinary Service Provider Special Projects for taking on the SCRUM Master role and helping our team stick with SCRUM after adopting the process."
-    },
-    {
-      "title": "EXPY",
-      "date": "2015",
-      "awarder": "Expedeint",
-      "summary": "For Extaordinary Service Provider Special Projects for the Customer Workbooks Project - creating and building a dynamic interface for collecting detailed information from customers to help us complete delivery of their new services."
-    },
-    {
-      "title": "EXPY",
-      "date": "2012",
-      "awarder": "Expedient",
-      "summary": "For the implementation of a Sales Commissions tool that turned a complex spreadsheet that relied on human input into backend web business logic that automatically derives commissions from data in our sales and delivery system."
-    }
-  ],
-  "publications": [],
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Experienced",
-      "keywords": [
-        "PHP",
-        "Javascript",
-        "Golang",
-        "Kubernetes",
-        "GIT",
-        "HTML",
-        "CSS"
-      ]
-    },
-    {
-      "name": "Database Management Systems",
-      "level": "Experienced",
-      "keywords": [
-        "MySQL",
-        "Oracle"
-      ]
-    },
-    {
-      "name": "Frameworks",
-      "level": "Experienced",
-      "keywords": [
-        "Symfony",
-        "Laravel"
-      ]
-    },
-    {
-      "name": "Operating Systems",
-      "level": "Experienced",
-      "keywords": [
-        "Unix",
-        "Windows",
-        "Mac OS"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Music",
-      "keywords": [
-        "Electronic",
-        "Experimental"
-      ]
-    },
-    {
-      "name": "Arts",
-      "keywords": [
-        "Film",
-        "Street Art",
-        "Multimedia",
-        "Print"
-      ]
-    }
-  ],
-  "projects": [
-    {
-    "name": "SMC",
-    "description": "The Support Management Console (SMC) web-based CRM and service management application that make a number of tools and services available to the Expedient Operations and Delivery teams.",
-    "highlights": [
-      "Integrates with external services including Salesforce, Docusign and Oracle BRM"
-    ],
-    "keywords": [
-      "PHP", "MySQL", "Symfony","Javascript", "Kubernetes"
-    ],
-    "startDate": "2010-01-01",
-    "url": "https://support.expedient.com/",
-    "roles": [
-      "Application Developer"
-    ],
-    "type": "application"
-  },
-  {
-    "name": "Quote Tracker",
-    "description": "Quote Tracker is a tool that facilitates the sales process at Expedient, from importing prospects from Salesforce, to generating quotes for prospective or existing customers, handling the signing process with Docusign, through handing off to the engineering delivery team, and paying salesrep commissions.",
-    "keywords": [
-      "PHP", "MySQL", "Symfony","Javascript", "Kubernetes"
-    ],
-    "startDate": "2009-01-01",
-    "url": "https://quote.expedient.com/",
-    "roles": [
-      "Application Developer"
-    ],
-    "type": "application"
-  },
-]
+	"basics": {
+		"name": "Geoffrey Maddock",
+		"label": "Full Stack Application Developer",
+		"picture": "http://geoffreymaddock.com/images/geoff-circle.png",
+		"email": "geoff.maddock@gmail.com",
+		"phone": "412.320.1476",
+		"website": "https://geoffreymaddock.com",
+		"summary": "Geoffrey hails from Pittsburgh, PA, where he grew up and later earned a degree in Computer Science from the University of Pittsburgh.  His professional career has been primarily as part of the information systems team at Expedient, a company that has transformed itself from an ISP to a sizable datacenter hosting and cloud managed services company.  As the longest tenured member of the team, he has built and maintained applications that are critical to the business's success, as well as worked to improve our software quality standards with continuous improvement, focusing on improving the company infrastructure and building robust web applications for all aspects of the operation, from sales to operations. His specialty has become designing and building custom, effective applications in the Symfony framework with PHP, Javascript, Go and MySQL, and deploying them to Kubernetes.  This is done while employing SCRUM to continuously inspect and improve our working process and produce the work most useful to the company in regular increments.  He enjoys music and djing, sci-fi, art, gaming and the outdoors.",
+		"location": {
+			"address": "50 Pasadena Street",
+			"postalCode": "PA 15211",
+			"city": "Pittsburgh",
+			"countryCode": "US",
+			"region": "Pennsylvania"
+		},
+		"profiles": [{
+				"network": "Twitter",
+				"username": "cutups",
+				"url": "https://twitter.com/cutups"
+			},
+			{
+				"network": "SoundCloud",
+				"username": "cutups",
+				"url": "https://soundcloud.com/cutups"
+			},
+			{
+				"network": "Facebook",
+				"username": "geoff.maddock",
+				"url": "https://www.facebook.com/geoff.maddock"
+			},
+			{
+				"network": "LinkedIn",
+				"username": "gmaddock",
+				"url": "https://www.linkedin.com/in/gmaddock"
+			},
+			{
+				"network": "GitHub",
+				"username": "geoff-maddock",
+				"url": "https://github.com/geoff-maddock"
+			}
+		]
+	},
+	"work": [{
+			"company": "Expedient",
+			"position": "Application Developer",
+			"website": "https://expedient.com",
+			"startDate": "2005-01-01",
+			"summary": "Expedient is a leading provider of data center and managed data network services with data centers in Pittsburgh, Baltimore, Columbus, Boston, Cleveland, Memphis and Indianapolis",
+			"highlights": [
+				"I design, develop and maintain scalable web applications for the employees of a Datacenter and cloud managed-services company with a rising national profile.",
+				"I work as part of a SCRUM team to convert the user stories from stakeholders into clear technical specifications, and then create custom code solutions using PHP, Javascript, Go, and MySQL, and deploy those Kubernetes.  I also manage tooling to support our infrastructure as code.",
+				"I have been the lead developer on a number of mission critical applications used by our Operations, Sales, Delivery and Support Teams, including Support Management Concole, QuoteTracker, PurchaseTracker, Delivery Tracker, Project Workbooks, IP Management Tool and others.",
+				"Won both solo (for Sales Commissions Tracker) and team based (for Workbooks) awards (Expys) in recognition for exceptional projects that helped support our organization."
+			]
+		},
+		{
+			"company": "Stargate",
+			"position": "Network Operations and Technical Support Analyst",
+			"website": "http://stargate.net",
+			"startDate": "1999-11-01",
+			"endDate": "2005-01-01",
+			"summary": "Stargate was a Pittsburgh based ISP and datacenter that was later bought by Expedient.   This was my first job out of college, working first in Tech Support, then Network Operations, supporting escalated corporate and residential network and software problems.",
+			"highlights": [
+				"Training of new call-center employees in troubleshooting and company procedures",
+				"Performed shift-leader duties, including assisting other techs, answering email problems, and handling escalated cases",
+				"Handled escalated support requests for a major regional ISP and Datacenter",
+				"Designed a version of the company intranet website."
+			]
+		},
+		{
+			"company": "Wrecked Distribution",
+			"position": "Owner",
+			"website": "http://wrecked-distro.com",
+			"startDate": "2001-01-01",
+			"summary": "Distributor and importer of hard to find electronic and experimental music with a strong catalog of breakcore and IDM.   Mostly operates as an online retailer and reseller as well as vendor at events.",
+			"highlights": [
+				"Owner and sole-proprietor of WRECKED part-time mail-order business ",
+				"Designed, coded, and maintain website, including a user system, shopping cart, and inventory control. Written from the ground up using PHP and MySQL. Designed and implemented the database using MySQL.  ",
+				"Involved in all aspects of acquiring and distribution of experimental electronic music, from receiving purchases, to packing orders, coding, business and design issues.",
+				""
+			]
+		}
+	],
+	"volunteer": [],
+	"education": [{
+		"institution": "University of Pittsburgh",
+		"area": "Computer Science",
+		"studyType": "Bachelor",
+		"startDate": "1995-08-01",
+		"endDate": "1999-05-01",
+		"gpa": "3.2",
+		"courses": [
+			"0441 DISCRETE STRUCTURES FOR COMPUTER SCIENCE",
+			"0445 DATA STRUCTURES",
+			"1520 PROGRAMMING LANGUAGES",
+			"1652 DATA COMMUNICATION & COMPUTER NETWORKS",
+			"1571 INTRODUCTION TO ARTIFICIAL INTELLIGENCE"
+		]
+	}],
+	"awards": [{
+			"title": "EXPY",
+			"date": "2021",
+			"awarder": "Expedeint",
+			"summary": "For Extaordinary Service Provider Special Projects for taking on the SCRUM Master role and helping our team stick with SCRUM after adopting the process."
+		},
+		{
+			"title": "EXPY",
+			"date": "2015",
+			"awarder": "Expedeint",
+			"summary": "For Extaordinary Service Provider Special Projects for the Customer Workbooks Project - creating and building a dynamic interface for collecting detailed information from customers to help us complete delivery of their new services."
+		},
+		{
+			"title": "EXPY",
+			"date": "2012",
+			"awarder": "Expedient",
+			"summary": "For the implementation of a Sales Commissions tool that turned a complex spreadsheet that relied on human input into backend web business logic that automatically derives commissions from data in our sales and delivery system."
+		}
+	],
+	"publications": [],
+	"skills": [{
+			"name": "Web Development",
+			"level": "Experienced",
+			"keywords": [
+				"PHP",
+				"Javascript",
+				"Golang",
+				"Kubernetes",
+				"GIT",
+				"HTML",
+				"CSS"
+			]
+		},
+		{
+			"name": "Database Management Systems",
+			"level": "Experienced",
+			"keywords": [
+				"MySQL",
+				"Oracle"
+			]
+		},
+		{
+			"name": "Frameworks",
+			"level": "Experienced",
+			"keywords": [
+				"Symfony",
+				"Laravel"
+			]
+		},
+		{
+			"name": "Operating Systems",
+			"level": "Experienced",
+			"keywords": [
+				"Unix",
+				"Windows",
+				"Mac OS"
+			]
+		}
+	],
+	"languages": [{
+		"language": "English",
+		"fluency": "Native speaker"
+	}],
+	"interests": [{
+			"name": "Music",
+			"keywords": [
+				"Electronic",
+				"Experimental"
+			]
+		},
+		{
+			"name": "Arts",
+			"keywords": [
+				"Film",
+				"Street Art",
+				"Multimedia",
+				"Print"
+			]
+		}
+	],
+	"projects": [{
+			"name": "SMC",
+			"description": "The Support Management Console (SMC) web-based CRM and service management application that make a number of tools and services available to the Expedient Operations and Delivery teams.",
+			"highlights": [
+				"Integrates with external services including Salesforce, Docusign and Oracle BRM"
+			],
+			"keywords": [
+				"PHP", "MySQL", "Symfony", "Javascript", "Kubernetes"
+			],
+			"startDate": "2010-01-01",
+			"url": "https://support.expedient.com/",
+			"roles": [
+				"Application Developer"
+			],
+			"type": "application"
+		},
+		{
+			"name": "Quote Tracker",
+			"description": "Quote Tracker is a tool that facilitates the sales process at Expedient, from importing prospects from Salesforce, to generating quotes for prospective or existing customers, handling the signing process with Docusign, through handing off to the engineering delivery team, and paying salesrep commissions.",
+			"keywords": [
+				"PHP", "MySQL", "Symfony", "Javascript", "Kubernetes"
+			],
+			"startDate": "2009-01-01",
+			"url": "https://quote.expedient.com/",
+			"roles": [
+				"Application Developer"
+			],
+			"type": "application"
+		}
+	]
 }
