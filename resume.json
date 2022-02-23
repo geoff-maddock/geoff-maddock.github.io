@@ -6,7 +6,10 @@
     "email": "geoff.maddock@gmail.com",
     "phone": "412.320.1476",
     "website": "https://geoffreymaddock.com",
-    "summary": "Geoffrey hails from Pittsburgh, PA, where he grew up and later earned a degree in Computer Science from the University of Pittsburgh.  His professional career has been primarily as part of the information systems team at Expedient, a company that has transformed itself from an ISP to a sizable datacenter hosting and cloud managed services company.  As the longest tenured member of the team, he has built and maintained applications that are critical to the business's success, as well as worked to improve our software quality standards with continuous improvement, focusing on improving the company infrastructure and building robust web applications for all aspects of the operation. His specialty has become designing and building custom, effective applications in the Symfony framework with PHP, Javascript, Go and MySQL, and deploying them to Kubernetes.  This is done while employing SCRUM to continuously inspect and improve our working process and produce the work most useful to the company in regular increments.  He enjoys music and djing, sci-fi, art, gaming and the outdoors.",
+    "summary": "Geoffrey hails from Pittsburgh, PA, where he grew up and later earned a degree in Computer Science from the University of Pittsburgh.  His professional career has been primarily as part of the information systems team at Expedient, a company that has transformed itself from an ISP to a sizable datacenter 
+    hosting and cloud managed services company.  As the longest tenured member of the team, he has built and maintained applications that are critical to the business's success, as well as worked to improve our software quality standards with continuous improvement, focusing on improving the company infrastructure
+     and building robust web applications for all aspects of the operation, from sales to operations. His specialty has become designing and building custom, effective applications in the Symfony framework with PHP, Javascript, Go and MySQL, and deploying them to Kubernetes. 
+      This is done while employing SCRUM to continuously inspect and improve our working process and produce the work most useful to the company in regular increments.  He enjoys music and djing, sci-fi, art, gaming and the outdoors.",
     "location": {
       "address": "50 Pasadena Street",
       "postalCode": "PA 15211",
@@ -50,8 +53,8 @@
       "startDate": "2005-01-01",
       "summary": "Expedient is a leading provider of data center and managed data network services with data centers in Pittsburgh, Baltimore, Columbus, Boston, Cleveland, Memphis and Indianapolis",
       "highlights": [
-        "I design, develop and maintain scalable web applications for a Datacenter and cloud managed-services company with a rising national profile.",
-        "Work as part of a SCRUM team to convert the requirements from stakeholders into create clear, custom code solutions using PHP, Javascript, Go, and MySQL, and deploy to Kubernetes.  Also manage tooling to support our infrastructure as code",
+        "I design, develop and maintain scalable web applications for the employees of a Datacenter and cloud managed-services company with a rising national profile.",
+        "I work as part of a SCRUM team to convert the user stories from stakeholders into clear technical specifications, and then create custom code solutions using PHP, Javascript, Go, and MySQL, and deploy those Kubernetes.  I also manage tooling to support our infrastructure as code.",
         "I have been the lead developer on a number of mission critical applications used by our Operations, Sales, Delivery and Support Teams, including Support Management Concole, QuoteTracker, PurchaseTracker, Delivery Tracker, Project Workbooks, IP Management Tool and others.",
         "Won both solo (for Sales Commissions Tracker) and team based (for Workbooks) awards (Expys) in recognition for exceptional projects that helped support our organization."
       ]
@@ -187,5 +190,35 @@
       ]
     }
   ],
-  "references": []
+  "projects": [
+    {
+    "name": "SMC",
+    "description": "The Support Management Console (SMC) web-based CRM and service management application that make a number of tools and services available to the Expedient Operations and Delivery teams.",
+    "highlights": [
+      "Integrates with external services including Salesforce, Docusign and Oracle BRM"
+    ],
+    "keywords": [
+      "PHP", "MySQL", "Symfony","Javascript", "Kubernetes"
+    ],
+    "startDate": "2010-01-01",
+    "url": "https://support.expedient.com/",
+    "roles": [
+      "Application Developer"
+    ],
+    "type": "application"
+  },
+  {
+    "name": "Quote Tracker",
+    "description": "Quote Tracker is a tool that facilitates the sales process at Expedient, from importing prospects from Salesforce, to generating quotes for prospective or existing customers, handling the signing process with Docusign, through handing off to the engineering delivery team, and paying salesrep commissions.",
+    "keywords": [
+      "PHP", "MySQL", "Symfony","Javascript", "Kubernetes"
+    ],
+    "startDate": "2009-01-01",
+    "url": "https://quote.expedient.com/",
+    "roles": [
+      "Application Developer"
+    ],
+    "type": "application"
+  },
+]
 }
