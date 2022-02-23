@@ -41,7 +41,8 @@
 			}
 		]
 	},
-	"work": [{
+	"work": [
+    {
 			"company": "Expedient",
 			"position": "Application Developer",
 			"website": "https://expedient.com",
@@ -117,7 +118,6 @@
 			"summary": "For the implementation of a Sales Commissions tool that turned a complex spreadsheet that relied on human input into backend web business logic that automatically derives commissions from data in our sales and delivery system."
 		}
 	],
-	"publications": [],
 	"skills": [{
 			"name": "Web Development",
 			"level": "Experienced",

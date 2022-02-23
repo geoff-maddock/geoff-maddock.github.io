@@ -45,13 +45,13 @@
     "work": [
       {
         "company": "Expedient",
-        "position": "Programmer",
+        "position": "Application Developer",
         "website": "https://expedient.com",
         "startDate": "2005-01-01",
         "summary": "Expedient is a leading provider of data center and managed data network services with data centers in Pittsburgh, Baltimore, Columbus, Boston, Cleveland, Memphis and Indianapolis",
         "highlights": [
-          "I design and develop web application software for a network, datacenter and managed-services company with a national profile.",
-          "I work with stakeholders of all skill levels to create clear, custom code solutions using PHP, Symfony, Javascript, MySQL, Oracle DB and any other applicable tools in our stack.",
+          "I design, develop and maintain scalable web applications for the employees of a Datacenter and cloud managed-services company with a rising national profile.",
+          "I work as part of a SCRUM team to convert the user stories from stakeholders into clear technical specifications, and then create custom code solutions using PHP, Javascript, Go, and MySQL, and deploy those Kubernetes.  I also manage tooling to support our infrastructure as code.",
           "I have been the lead developer on a number of mission critical applications used by our Operations, Sales, Delivery and Support Teams, including Support Management Concole, QuoteTracker, PurchaseTracker, Delivery Tracker, Project Workbooks, IP Management Tool and others.",
           "Won both solo (for Sales Commissions Tracker) and team based (for Workbooks) awards (Expys) in recognition for exceptional projects that helped support our organization."
         ]
@@ -59,7 +59,7 @@
       {
         "company": "Stargate",
         "position": "Network Operations and Technical Support Analyst",
-        "website": "http://starget.net",
+        "website": "http://stargate.net",
         "startDate": "1999-11-01",
         "endDate": "2005-01-01",
         "summary": "Stargate was a Pittsburgh based ISP and datacenter that was later bought by Expedient.   This was my first job out of college, working first in Tech Support, then Network Operations, supporting escalated corporate and residential network and software problems.",
@@ -82,7 +82,7 @@
           "Involved in all aspects of acquiring and distribution of experimental electronic music, from receiving purchases, to packing orders, coding, business and design issues.",
           ""
         ]
-      },
+      }
       {
         "company": "DIY Events",
         "position": "Promoter",
@@ -116,28 +116,35 @@
         ]
       }
     ],
-    "awards": [
-      {
-        "title": "EXPY",
-        "date": "2015",
-        "awarder": "Expedeint",
-        "summary": "For Extaordinary Service Provider Special Projects for the Customer Workbooks Project - creating and building a dynamic interface for collecting detailed information from customers to help us complete delivery of their new services."
-      },
-      {
-        "title": "EXPY",
-        "date": "2012",
-        "awarder": "Expedient",
-        "summary": "For the implementation of a Sales Commissions tool that turned a complex spreadsheet that relied on human input into backend web business logic that automatically derives commissions from data in our sales and delivery system."
-      }
-    ],
+    "awards": [{
+			"title": "EXPY",
+			"date": "2021",
+			"awarder": "Expedeint",
+			"summary": "For Extaordinary Service Provider Special Projects for taking on the SCRUM Master role and helping our team stick with SCRUM after adopting the process."
+		},
+		{
+			"title": "EXPY",
+			"date": "2015",
+			"awarder": "Expedeint",
+			"summary": "For Extaordinary Service Provider Special Projects for the Customer Workbooks Project - creating and building a dynamic interface for collecting detailed information from customers to help us complete delivery of their new services."
+		},
+		{
+			"title": "EXPY",
+			"date": "2012",
+			"awarder": "Expedient",
+			"summary": "For the implementation of a Sales Commissions tool that turned a complex spreadsheet that relied on human input into backend web business logic that automatically derives commissions from data in our sales and delivery system."
+		}
+	],
     "publications": [],
     "skills": [
       {
         "name": "Web Development",
-        "level": "Master",
+        "level": "Experienced",
         "keywords": [
           "PHP",
           "Javascript",
+          "Golang",
+          "Kubernetes",
           "GIT",
           "HTML",
           "CSS"
@@ -145,7 +152,7 @@
       },
       {
         "name": "Database Management Systems",
-        "level": "Master",
+        "level": "Experienced",
         "keywords": [
           "MySQL",
           "Oracle"
@@ -153,7 +160,7 @@
       },
       {
         "name": "Frameworks",
-        "level": "Master",
+        "level": "Experienced",
         "keywords": [
           "Symfony",
           "Laravel"
@@ -161,7 +168,7 @@
       },
       {
         "name": "Event Promotion",
-        "level": "Master",
+        "level": "Experienced",
         "keywords": [
           "Curation",
           "Social Media",
@@ -205,5 +212,34 @@
         ]
       }
     ],
-    "references": []
+    "projects": [{
+			"name": "SMC",
+			"description": "The Support Management Console (SMC) web-based CRM and service management application that make a number of tools and services available to the Expedient Operations and Delivery teams.",
+			"highlights": [
+				"Integrates with external services including Salesforce, Docusign and Oracle BRM"
+			],
+			"keywords": [
+				"PHP", "MySQL", "Symfony", "Javascript", "Kubernetes"
+			],
+			"startDate": "2010-01-01",
+			"url": "https://support.expedient.com/",
+			"roles": [
+				"Application Developer"
+			],
+			"type": "application"
+		},
+		{
+			"name": "Quote Tracker",
+			"description": "Quote Tracker is a tool that facilitates the sales process at Expedient, from importing prospects from Salesforce, to generating quotes for prospective or existing customers, handling the signing process with Docusign, through handing off to the engineering delivery team, and paying salesrep commissions.",
+			"keywords": [
+				"PHP", "MySQL", "Symfony", "Javascript", "Kubernetes"
+			],
+			"startDate": "2009-01-01",
+			"url": "https://quote.expedient.com/",
+			"roles": [
+				"Application Developer"
+			],
+			"type": "application"
+		}
+	]
   }
