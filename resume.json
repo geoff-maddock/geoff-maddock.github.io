@@ -118,8 +118,9 @@
 			"summary": "For the implementation of a Sales Commissions tool that turned a complex spreadsheet that relied on human input into backend web business logic that automatically derives commissions from data in our sales and delivery system."
 		}
 	],
-	"skills": [{
-			"name": "Web Development",
+	"skills": [
+		{
+			"name": "Application & Web Development",
 			"level": "Experienced",
 			"keywords": [
 				"PHP",
@@ -145,6 +146,16 @@
 			"keywords": [
 				"Symfony",
 				"Laravel"
+			]
+		},
+		{
+			"name": "Tooling",
+			"level": "Experienced",
+			"keywords": [
+				"Github Actions",
+				"Skaffold",
+				"Ansible",
+				"ArgoCD"
 			]
 		},
 		{
